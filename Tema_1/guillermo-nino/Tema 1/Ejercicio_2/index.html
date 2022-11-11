@@ -1,0 +1,334 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guillermo Nino">
+    <title>Tema 1 - Ejercicio 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center"> <!--Padding 5 y texto centrado-->
+      <svg xmlns="http://www.w3.org/2000/svg" width="72" height="57" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+      </svg>
+      <h2>Formulario de pago</h2><!--mb-4 is margin-bottom 4 ($spacer*1.5)=16*1.5-->
+      <p class="lead mb-0">Este es un formulario de pago basado en Bootstrap usando como modelo
+        el "Checkout form" de la página de Bootstrap.</p><!--lead makes paragraph "stand out"-->
+      <p class="lead">Sólo hacemos envíos dentro de la península</p>
+    </div>
+
+    <div class="row g-5"> <!--row is container for responsive columns-->
+      <div class="col-md-5 col-lg-4 order-md-last"><!--42%/58% split for medium devices and 33%/66% for large devices-->
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <!--flexbox container, aligned center items,margin botton 16px (16*1)-->
+          <span class="text-success">Resumen pedido</span>
+          <span class="badge bg-success rounded-pill">4</span>
+        </h4>
+        <!--Use list-group with <ul> and list-group-item with <li>-->
+        <ul class="list-group mb-3"> <!--margin bottom 16px-->
+          <li class="list-group-item d-flex justify-content-between lh-sm"><!--line height is small-->
+            <div>
+              <h6 class="my-0">Producto uno</h6><!--Responsive top and bottom margin 0-->
+              <small class="text-secondary">Tu producto principal</small>
+            </div>
+            <span class="text-secondary">50€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Producto dos</h6>
+              <small class="text-secondary">Producto complementario</small>
+            </div>
+            <span class="text-secondary">$21€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Tercer producto</h6>
+              <small class="text-secondary">Otro producto</small>
+            </div>
+            <span class="text-secondary">3€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm bg-light">
+            <div class = "text-success">
+              <h6 class="my-0">Regalo</h6>
+              <small>Regalo por Black Friday</small>
+            </div>
+            <span class="text-secondary">0€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-danger">
+              <h6 class="my-0">Envío</h6>
+              <small>Costes de envío</small>
+            </div>
+            <span class="text-success">4,99€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (Euros)</span>
+            <strong>78,99€</strong>
+          </li>
+        </ul>
+
+        <form class="card p-1"> <!--Card with padding 0.25*16=4px-->
+          <div class="input-group"> <!--container to enhance an input by adding an
+        icon, text or a  button in front or behind the input field as a "help text"-->
+            <input type="text" class="form-control" placeholder="Código promocional">
+            <button type="submit" class="btn btn-dark">Canjear</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Dirección de facturación</h4>
+        <form class="needs-validation" novalidate> <!-- Needs validation will highlight fills that are mandatory and were not filled after submitting-->
+          <div class="row g-3">
+            <div class="col-sm-4">
+              <label for="=nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un nombre valido.
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <label for="primerapellido" class="form-label">Primer Apellido</label>
+              <input type="text" class="form-control" id="primerappelido" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un primer apellido.
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="segundoapellido" class="form-label">Segundo Apellido</label>
+                <input type="text" class="form-control" id="segundoapellido" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere un segundo apellido.
+                </div>
+              </div>
+
+            <div class="col-4">
+              <label for="identificacion" class="form-label">DNI/CIF/NIE</label>
+              <div class="input-group has-validation">
+                <div class="input-group-prepend">
+                    <select class="form-select" id="identificacion" required>
+                        <option value="">Escoja</option>
+                        <option>NIF</option>
+                        <option>CIF</option>
+                        <option>NIE</option>
+                      </select>
+                  </div>
+                <input type="text" class="form-control" id="nif" placeholder="Numero" required>
+              <div class="invalid-feedback">
+                  Introduzca un numero de identificacion valido.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+              <div class="invalid-feedback">
+                Proporcione una dirección de correo correcta.
+              </div>
+            </div>
+
+            <div class="col-3">
+                <label for="telefono" class="form-label">Teléfono <span class="text-muted">(Opcional)</span></label>
+                <input type="email" class="form-control" id="telefono" placeholder="">
+                <div class="invalid-feedback">
+                  Proporcione una dirección de correo correcta.
+                </div>
+              </div>
+
+            <div class="col-12">
+              <label for="direccion1" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="direccion1" placeholder="Nombre de la calle y número" required>
+              <div class="invalid-feedback">
+                Por favor introduzca su dirección de facturación.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="direccion2" class="form-label">Informacion adicional <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="direccion2" placeholder="Bloque, escalera, piso, puerta...">
+            </div>
+
+            <div class="col-md-5">
+              <label for="comunidad" class="form-label">Comunidad Autonoma</label>
+              <select class="form-select" id="comunidad" required>
+                <option value="">Escoja</option>
+                <option>Andalucia</option>
+                <option>Aragón</option>
+                <option>Asturias</option>
+                <option>Cantabria</option>
+                <option>Castilla-La Mancha</option>
+                <option>Castilla y León</option>
+                <option>Cataluña</option>
+                <option>Comunidad Valenciana</option>
+                <option>Extremadura</option>
+                <option>Galicia</option>
+                <option>La Rioja</option>
+                <option>Comunidad de Madrid</option>
+                <option>Murcia</option>
+                <option>Navarra</option>
+                <option>País Vasco</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor escoja la Comunidad.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="ciudad" class="form-label">Ciudad</label>
+              <select class="form-select" id="state" required>
+                <option value="">Escoja</option>
+                <option>Sevilla</option>
+                <option>Zaragoza</option>
+                <option>Oviedo</option>
+                <option>Santander</option>
+                <option>Toledo</option>
+                <option>Valladolid</option>
+                <option>Barcelona</option>
+                <option>Valencia</option>
+                <option>Mérida</option>
+                <option>Santiado de Compostela</option>
+                <option>Logroño</option>
+                <option>Madrid</option>
+                <option>Murcia</option>
+                <option>Pamplona</option>
+                <option>Vitoria</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor escoja la Ciudad.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cp" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="cp" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+
+            <div class="form-outline">
+              <label for="mensaje" class="form-label">Comentarios adicionales</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="facturacion">
+            <label class="form-check-label" for="facturacion">La dirección de envío es la misma 
+              que la dirección de facturación
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="guardar-datos">
+            <label class="form-check-label" for="guardar-datos">Deseo guardar mis datos para 
+              próximas compras
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="guardar-datos">
+            <label class="form-check-label" for="guardar-datos">Quiero recibir noticias y ofertas exclusivas
+            </label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credito" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credito">Tarjeta de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debito" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debito">Tarjeta de debito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
+              </svg>
+            </div>
+            <div class="form-check">
+              <input id="bizum" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="bizum">Bizum</label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="tarjeta-nombre" class="form-label">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="tarjeta-nombre" placeholder="" required>
+              <small class="text-muted">Nombre completo tal y como aparece en la tarjeta</small>
+              <div class="invalid-feedback">
+                Es obligatorio introducir un nombre
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="tarjeta-numero" class="form-label">Número de la tarjeta</label>
+              <input type="text" class="form-control" id="tarjeta-numero" placeholder="" required>
+              <div class="invalid-feedback">
+                Es obligatorio introducir el número de la tarjeta
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="tarjeta-fecha" class="form-label">Fecha de caducidad</label>
+              <input type="text" class="form-control" id="tarjeta-fecha" placeholder="" required>
+              <div class="invalid-feedback">
+                Es obligatorio introducir la fecha de caducidad
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="tarjeta-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="tarjeta-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Es oligatorio introducir el CVV
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-success btn-lg" type="submit">Proceder con el pago</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022–2023 Guillermo Niño</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidad</a></li>
+      <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+      <li class="list-inline-item"><a href="#">Soporte</a></li>
+      <li class="list-inline-item"><a href="#">FAQ</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>

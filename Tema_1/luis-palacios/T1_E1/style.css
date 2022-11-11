@@ -1,0 +1,249 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* sección root para variables globales */
+:root {
+
+    /*  Anchura máxima del contenido en desktop */
+    --max-width: 1200px;
+
+    /* Colores */
+    --color-primary: #3A637F;
+    --color-secondary: #EEF271;
+    --color-text: white;
+
+    /*  Tamaños  */
+    --section-spacing: 3rem;
+
+    /* Otros */
+    --border-radius: 0.25rem;
+    --body-font: 'Open Sans', sans-serif;
+
+}
+
+/* elementos html */
+body {
+    background-color: var(--color-primary); 
+    font-family: var(--body-font);
+    color: var(--color-text);
+}
+
+hr {
+    margin-top: 2rem;
+    border: 0.20rem solid;
+    border-radius: var(--border-radius);
+}
+
+h2 {
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    h2 {
+        text-align: left
+    }
+
+    ;
+}
+
+
+/* mis estilos */
+.header {
+    text-align: center;
+}
+
+.title {
+    color: var(--color-secondary);
+}
+
+.subtitle {
+    color: var(--color-secondary);
+    font-weight: 200;
+    display: initial;
+}
+
+.content-wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--max-width);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .content-wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section {
+    margin-bottom: var(--section-spacing);
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .element {
+        justify-content: left;
+    }
+}
+
+.grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link-left {
+    width: 25%;
+    border-right: solid 0.3rem;
+    border-radius: var(--border-radius);
+}
+
+.date {
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    font-size: small;
+    opacity: 0.7;
+}
+
+.header h3{
+    position: relative;
+}
+
+.header h3 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: var(--color-primary);
+    border-left: 1px solid var(--color-text);
+
+    animation: maquina 5s infinite alternate;
+}
+
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+.fa-opacity{
+    opacity: 0.3;
+}
+
+.fa-solid{
+    color: var(--color-secondary);
+}
+
+/* ***************************** */
+/* Contacto */
+/* ***************************** */
+
+.contact-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+/* ***************************** */
+/* Skills */
+/* ***************************** */
+.skills-items > div{
+    padding-bottom: 1rem;
+}
+
+.skills-items > .grid-two {
+    gap: 3.5rem;
+}
+
+/* ***************************** */
+/* Experience */
+/* ***************************** */
+.experience-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience .grid-two{
+    grid-template-columns: 5% 95%;
+}
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+    .experience .grid-two {
+        grid-template-columns: 10% 90%;
+    }
+}
+
+.item-experience{
+    padding-bottom: 0.1rem;
+}
+
+/* ***************************** */
+/* Education */
+/* ***************************** */
+.education .grid-two {
+    grid-template-columns: 5% 95%;
+}
+
+/* Desktop */
+@media screen and ( min-width:1024px){
+    .education .grid-two {
+            grid-template-columns: 10% 90%;
+        }
+}
+
+.item-education{
+    padding-bottom: 0.1rem;
+}
+
+
+.hobbies p{
+    text-align: center;
+}
+
+/* ***************************** */
+/* Footer */
+/* ***************************** */
+.footer{
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footer p{
+    color: var(--color-primary);
+}
+
+/* ***************************** */
+/* web responsive */
+/* ***************************** */
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .content-cv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+}

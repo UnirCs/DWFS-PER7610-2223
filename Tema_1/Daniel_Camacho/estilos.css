@@ -1,0 +1,55 @@
+.container{
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Alegreya Sans', sans-serif;   
+    display: flex;
+    align-content: center;
+}
+
+.left{
+    background-color: steelblue;
+    width: 300px;
+    
+}
+
+.pleft{
+    color: aliceblue;
+    margin: 0 auto;   
+    width: 250px; 
+    text-align: justify;
+}
+
+.tleft{
+    color: aliceblue;
+    text-align: center;
+}
+
+.image{
+    border: 1px solid #333;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 80px;
+}
+
+.rigth{
+    margin: 20px;
+}
+
+.prigth{
+    margin: 0 auto;   
+    width: 550px; 
+    text-align: justify;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+tr, th{
+    border: solid 1px black;
+}
+
+.desc{
+    min-width: 150px;
+}

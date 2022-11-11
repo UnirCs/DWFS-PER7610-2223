@@ -1,0 +1,270 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/* || General styles */
+
+:root {
+
+    /* Colors */
+    --blue: #23A0E8;
+    --yellow: #E8E30C;
+    --white: #ffffff;
+
+    /* Font weight */
+    --light: 300;
+    --medium: 400;
+    --bold: 600;
+
+    /* Font size */
+    --h1-text: 50px;
+    --h2-text: 25px;
+    --h3-text: 20px;
+    --p-text: 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+h1 {
+    font-weight: var(--bold);
+    font-size: var(--h1-text);
+    color: var(--yellow);
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+h2 {
+    font-weight: var(--bold);
+    font-size: var(--h2-text);
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+
+h3 {
+    font-weight: var(--light);
+    font-size: var(--h3-text);
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+
+p {
+    font-weight: var(--light);
+    font-size: var(--p-text);
+    color: var(--white);
+}
+
+hr {
+    border: 1px solid var(--white);
+    width: 800px;
+    margin-top: 30px;
+}
+
+/* || Utilities */
+
+.reduced-width {
+    width: 60%;
+}
+
+.standard-width {
+    width: 90%;
+}
+
+.yellow {
+    color: var(--yellow)
+}
+
+/* Text variants */
+
+.title {
+    font-weight: var(--bold);
+}
+
+.meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/* || Sitewide */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--blue);
+    min-height: 100%;
+}
+
+.content {
+    max-width: 800px;
+    padding: 100px 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: left;
+}
+
+.column-item:not(:first-child) {
+    margin-top: 10%;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.timeline-group {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.timeline-group::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -20px;
+}
+
+.timeline-element:not(:first-child) {
+    margin: 30px 0;
+}
+
+.timeline-element::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -24px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+/* Timeline heights  */
+
+.top::after {
+    top: 0;
+}
+
+.middle::after {
+    top: 133px;
+}
+
+.bottom::after {
+    bottom: 83px;
+}

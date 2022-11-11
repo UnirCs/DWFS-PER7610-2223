@@ -1,0 +1,337 @@
+*{
+    margin: 0  ;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ body{
+/*     background: url(back.PNG); */
+    background-position: top center;
+    height: 1080px;
+    background-color: rgb(11, 81, 83);
+/*     background-color: #064128; */
+/*     background-repeat: no-repeat;  */
+} 
+
+header{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 120px;
+   /*  background: rgba(255, 255, 0,.5); */
+}
+
+section{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 710px;
+  /*   background: rgba(0,255,0, .5); */
+}
+
+
+footer{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 120px;
+   /*  background: rgba(255, 72, 0, 0.5); */
+}
+
+
+
+#profile {
+    float: left;
+    width: 480px;
+    height: 200px;
+    text-align: justify;
+    /* background: rgba(0,255,255, .5); */
+}
+
+
+
+#experience {
+    float: left;
+    width: 500px;
+    height: 400px;
+    text-align: justify;
+/*     background: rgba(255, 0, 76, 0.5); */
+}
+
+
+
+#contact {
+    float: left;
+    width: 480px;
+    height: 100px;
+/*     background: rgba(255, 51, 0, 0.5); */
+}
+
+
+
+#education {
+    float: left;
+    width: 500px;
+    height: 300px;
+    text-align: justify;
+    /* background: rgba(38, 0, 255, 0.5); */
+}
+
+
+#skills {
+    float: left;
+    width: 480px;
+    height: 300px;
+   /*  background: rgba(255, 174, 0, 0.5); */
+}
+
+.title-CV
+{
+    padding-top: 20px;
+    text-align: center;
+    align-content: center;
+    width:100%;
+    color: #e7d151;
+}
+
+.block-CV
+{
+    text-align: left;
+    text-align: justify;
+    align-content: center;
+    width:100%;
+    color: #e7d151;
+}
+
+h1{
+    color: #e7d151;
+}
+p{
+    color: #f3f2ec;
+   
+}
+
+
+.anythinglisting4 {
+    padding: 15px 30px;
+}
+
+.anythinglisting4 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: number;
+    position: relative;
+}
+
+.anythinglisting4 ul::before {
+    border-left: 4px solid rgb(245, 247, 248);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 4px;
+    height: 100%;
+    z-index: 0;
+}
+
+.anythinglisting4 ul li {
+    position: relative;
+    font-size: 16px;
+
+    padding: 15px 0 15px 50px;
+}
+
+.anythinglisting4 ul li::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffbc00;
+    left: 0;
+    text-align: center;
+    content: '';
+    border-radius: 50%;
+    color: #fff;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.content-icon
+{
+    padding-left:50px ;
+}
+
+/*mail*/
+.icon.mail-solid.icon {
+    color: #ffbc00;
+    position: absolute; 
+  
+    margin-left: 2px;
+    margin-top: 4px;
+    width: 15px;
+    height: 10px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+    display:inline-block;
+  
+    
+  } 
+  
+  .mail-solid.icon:before {
+    content: '';
+  
+    position: absolute; 
+    left: 7px;
+    top: -4px;
+    width: 1px;
+    height: 10px;
+    color: white;
+    background-color: currentColor;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+  }
+  
+  .mail-solid.icon:after {
+    content: '';
+    position: absolute; 
+    left: 7px;
+    top: -4px;
+    width: 1px;
+    height: 10px;
+    color: white;
+    background-color: currentColor;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+  }
+  
+  /*pin*/
+    
+  .pin-solid.icon {
+      color: #ffbc00;
+    
+       position: absolute; 
+      margin-left: 4px;
+      margin-top: 2px;
+      width: 12px;
+      height: 12px;
+      border: solid 1px currentColor;
+      border-radius: 7px 7px 7px 0;
+      background-color: currentColor;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    
+    .pin-solid.icon:before {
+      content: '';
+  
+     position: absolute; 
+      left: 3px;
+      top: 3px;
+      width: 4px;
+      height: 4px;
+      color: white;
+      border: solid 1px currentColor;
+      border-radius: 3px;
+      background-color: currentColor;
+    }
+    
+    /*chat*/
+  
+    .chat-solid.icon {
+      color: #ffbc00;
+      position: absolute; 
+      margin-left: 2px;
+      margin-top: 4px;
+      width: 15px;
+      height: 10px;
+      border: solid 1px currentColor;
+      background-color: currentColor;
+      border-radius: 2px;
+    }
+    
+    .chat-solid.icon:before {
+      content: '';
+       position: absolute; 
+      left: 3px;
+      top: 8px;
+      width: 4px;
+      height: 4px;
+      background-color: currentColor;
+      border-bottom: solid 1px currentColor;
+      border-right: solid 1px currentColor;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    
+
+/*Rate*/
+li{
+    color: #e7d151;
+}
+    
+.star-ratings-css {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 25px;
+    height: 25px;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 0 1px 0 #a2a2a2;
+  } 
+  .star-ratings-css::before { 
+    content: '★★★★';
+    opacity: .3;
+  }
+  
+  [title=".000"]::after {
+    width: 0%;
+  }
+  [title=".125"]::after {
+    width: 12.5%;
+  }
+  [title=".250"]::after {
+    width: 25%;
+  }
+  [title=".375"]::after {
+    width: 37.5%;
+  }
+  [title=".500"]::after {
+    width: 50%;
+  }
+  [title=".625"]::after {
+    width: 62.5%;
+  }
+  [title=".750"]::after {
+    width: 75%;
+  }
+  [title=".875"]::after {
+    width: 87.5%;
+  }
+  .star-ratings-css::after {
+    color: gold;
+    content: '★★★★';
+    text-shadow: 0 1px 0 #ab5414;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    top:0;
+    width: attr(rating);
+    overflow: hidden;
+  }
+  
+
+.content-rate
+{
+    width:200px ;
+}
+
+  
+    

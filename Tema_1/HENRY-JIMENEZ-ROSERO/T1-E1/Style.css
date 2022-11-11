@@ -1,0 +1,228 @@
+*{
+    margin: 0  ;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f558;
+}
+
+
+
+ body{
+    color: #f8f558;
+    background-position: top center;
+    height: 1080px;
+    background-color: rgba(58,99,127,255); 
+    background-image: url(exampletext.png); background-repeat:repeat;
+    
+} 
+
+
+header{
+    padding-top: 40px;
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 120px;
+    color: #f8f558;
+    text-align: center;
+    align-content: center;
+    width:100%;
+    padding-bottom: 5px;
+   }
+
+header h1{
+    font-size: xxx-large;
+    letter-spacing: 5px;
+}  
+header h3{
+
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+}
+
+ul h1{
+    letter-spacing: 5px
+}
+
+li  p{
+    margin-top: 20px;
+    text-align:left; 
+    color:#ffffff; 
+    width:90%;
+    line-height: 25px;
+    
+    position: relative;
+ }
+
+ .iconotext{
+    text-align:left; 
+    color:#ffffff; 
+    width:100%;
+    line-height: 25px;
+    display:flex;
+    position: relative;
+    left:50px;
+    margin-bottom: 20px;
+ }
+
+
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("fontawesome-webfont.woff");
+  }
+
+.icono1::before {
+    font-family: "FontAwesome", sans-serif;
+    font-size: x-large;
+    content: "\260E";
+    color: #f8f558;
+    padding-right: 4px;
+    position: absolute;
+    margin-bottom: 20px;
+  }
+
+.icono2::before {
+    font-family: "FontAwesome", sans-serif;
+    font-size: x-large;
+    content: "\2709";
+    color: #f8f558;
+    padding-right: 4px;
+    position: absolute;
+    margin-bottom: 20px;
+  }
+.icono3{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 180px;
+    border-radius: 50% 50% 50% 0;
+    border: 4px solid #f8f558;
+    width: 18px;
+    height: 18px;
+    transform: rotate(-45deg);
+}
+
+.icono3::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    background-color: #f8f558;
+  }
+
+
+
+
+
+ul li{
+     margin-bottom: 15px;
+}
+
+
+
+
+section{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 710px;
+    color: #ffffff;
+  
+}
+
+
+footer{
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+    width: 1000px;
+    height: 120px;
+   
+}
+
+
+
+#profile {
+    float: left;
+    width: 480px;
+    height: 200px;
+    text-align: justify;
+    
+}
+
+
+
+#experience {
+    float: left;
+    width: 500px;
+    height: 400px;
+    text-align: justify;
+    margin-bottom: 80px;
+
+}
+
+
+
+#contact {
+    float: left;
+    width: 480px;
+    height: 100px;
+
+}
+
+
+.edu{
+  margin-bottom: 50px;
+}
+#education {
+    float: left;
+    width: 500px;
+    height: 300px;
+    text-align: justify;
+    margin-bottom: 50px;
+    
+}
+
+
+#caps {
+    float: left;
+    width: 480px;
+    height: 300px;
+    position: relative;
+   
+}
+
+section h1{
+
+  margin-top:auto;
+}
+
+.pasat{
+
+  margin-top:50px;
+}
+.capacidades {
+  font-family: "FontAwesome", sans-serif;
+  color: #f8f558;
+  letter-spacing: 5px;
+} 
+
+

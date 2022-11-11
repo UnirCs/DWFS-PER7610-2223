@@ -1,0 +1,50 @@
+
+
+  h1{
+    color: blue;
+    font-style:arial;
+    font-size:14pt;
+    text-aling:center;
+  }
+
+  #tabla1{
+    text-align:center;
+    color: black;
+    font-style:arial;
+    font-size:12pt;
+  }
+
+  th{
+    font-weight: bold;
+    font-size:12pt;
+  }
+
+ #institucion,#anio,#titulo,#empresa,#telefono{
+   font-weight: bold; 
+}
+
+#herramienta1,#herramienta2,#herramienta3{
+   font-weight: bold; 
+   color: #a80d46;
+}
+
+body {
+	background-color:#f1e2d2;
+}
+
+ #tablatrab1,#tablatrab2,#tablatrab3{
+   text-indent: 50px;
+   padding-rigth: 40px
+  }
+
+ #t1,#t2,#t3{
+   margin-left: 30; 
+  }
+img{
+  width: 40%;
+  height: 40%;
+}
+
+hr{
+  border: 1px solid #e0125e;
+}

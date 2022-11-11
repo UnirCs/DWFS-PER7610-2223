@@ -1,0 +1,54 @@
+body {
+    background-color: #3a637f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+}
+
+thead {
+    text-align: center;
+}
+
+.title-color {
+    color: #eef269;
+}
+
+.icons-contact {
+    color: #eef269;
+    font-size: 26px;
+}
+
+.icons-skills {
+    color: #eef269;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.linea-horizontal {
+    color: white;
+}
+
+.side-line {
+    border-left-color: white;
+    border-width: 2px;
+    border-left: solid;
+    padding-left: 30px;
+}
+
+.td-align {
+    width: 25%;
+    padding-right: 60px;
+    padding-left: 60px;
+    vertical-align: top;
+}
+
+.align-skills {
+    text-align: right;
+    width: 210px;
+}

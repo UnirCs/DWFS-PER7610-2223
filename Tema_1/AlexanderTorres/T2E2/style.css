@@ -1,0 +1,41 @@
+.contenedor{
+    margin-top: 5%;
+    
+	margin: 20px auto;
+}
+body{
+    background-color: rgb(246, 245, 245);
+}
+.span{
+    background-color: rgb(91, 91, 91);
+    color: white;
+}
+.envSpan{
+background-color: white;
+padding: 5px;
+border: 1px  solid rgb(187, 187, 187);
+margin-top: 10px;
+border-radius: 10px;
+}
+.num{
+    text-align: right;
+    
+}
+.tres{
+    background-color: rgb(93, 93, 93);
+    border-radius: 50px;
+    color: white !important;
+}
+.badge{
+   
+    color:rgb(125, 125, 125);
+}
+.green{
+    color: green;
+}
+.col-4>h3{
+    color: rgb(93, 93, 93);
+}
+.iz{
+    margin:0px auto;
+}

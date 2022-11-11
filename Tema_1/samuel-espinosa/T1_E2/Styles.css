@@ -1,0 +1,27 @@
+
+
+.section{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height:1150px;
+    background-color: rgba(228, 224, 224, 0.986);
+
+}
+
+header{
+    background: rgba(0, 255, 55, 0.5);
+}
+
+table.rounded-corners {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    border: 1px solid rgb(170, 161, 161);
+  }
+
+
+  .align-cart{
+    text-align: right;
+    padding-right: 10px;
+  }

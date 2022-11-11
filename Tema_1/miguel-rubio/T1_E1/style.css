@@ -1,0 +1,125 @@
+:root {
+    --main-text-color: #f2f865;
+    --main-bg-color: #3a637f;
+    --white-color: #ffffff;
+    --main-header-font-size: 5rem;
+    --sub-header-font-size: 1.5rem;
+    --topic-header-font-size: 2rem;
+}
+
+body {
+    font-family: verdana, sans-serif;
+    font-style: normal;
+    background-color: var(--main-bg-color);
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    min-width: 900px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: var(--main-text-color);
+    font-size: var(--main-header-font-size);
+    text-transform: uppercase;
+}
+
+.sub-header-text {
+    color: var(--main-text-color);
+    font-size: var(--sub-header-font-size);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.topic-header-text {
+    color: var(--main-text-color);
+    font-size: var(--topic-header-font-size);
+    text-transform: uppercase;
+}
+
+.white {
+    color: var(--white-color);
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    background-color: var(--white-color);
+    border: solid var(--white-color);
+    margin-top: 3rem;
+}
+
+.panels {
+    display: flex;
+    overflow: auto;
+    margin-top: 3rem;
+}
+
+.left-panel {
+    width: 50%;
+    margin: 1em auto 0 auto;
+    margin-right: 5rem;
+}
+
+.right-panel {
+    width: 50%;
+    margin: 1em auto 0 auto;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon-container .fa-solid {
+    color: var(--main-text-color);
+    margin-right: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 18rem;
+}
+
+.skills-container span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dots-bar {
+    margin-left: 3rem;
+}
+
+.skill-text {
+    color: var(--white-color);
+    width: 7rem;
+    margin: 3px;
+}
+
+.dots-bar .fa-circle {
+    color: var(--main-text-color);
+}
+
+.cv-list {
+    margin-bottom: 35px;
+}
+
+.cv-text-header {
+    font-weight: 700;
+    margin: 2px;
+}
+
+.cv-text {
+    margin: 3px;
+    text-transform: capitalize;
+}

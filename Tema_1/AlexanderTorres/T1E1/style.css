@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header header"
+						 "contenido contenido sidebar sidebar"
+						 "contenido contenido sidebar sidebar"
+						 "contenido contenido sidebar sidebar";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #12203E;
+	color: #fff;
+	grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    height:200px ;
+    
+}
+header div{
+    width: 100%;
+}
+header h1{
+    
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+header h2{
+    
+    text-align: center;
+    width: 100%;
+}
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenido div{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    list-style: none;
+}
+ul li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.habilidades {
+    display:flex;
+    align-content: space-between;
+    }
+.habilidades ul{
+width: 40%;
+}
+.contenedor .sidebar {
+	
+	background: #fAA43D;
+	
+	
+
+	
+	min-height: 100px;
+	grid-area: sidebar;
+}
+.estrellaActiva{
+    color: red;
+}
+.estrellaVacia{
+    color: grey;
+}
+
+
+.sidebar h1{
+	font-size: 35px;
+}
+.sidebar div{
+	margin-bottom: 50px;
+    margin-top: 30px;
+	
+    list-style: none;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		display: flex;
+		flex-direction: column;
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido contenido"
+						 "contenido contenido contenido contenido"
+						 "sidebar sidebar sidebar sidebar"
+						 "sidebar sidebar sidebar sidebar";
+	}
+	
+}
+@media screen and (max-width: 660px){
+	.header {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+}

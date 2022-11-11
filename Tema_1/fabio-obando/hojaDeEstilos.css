@@ -1,0 +1,33 @@
+p {color: green; text-align: left;}
+h1 {color: green; text-align: center;}
+h2 {color: red; text-align: right;}
+h3 {color: blue; text-align: left;}
+ol, ul {color: gray;}
+table, tr, td {border: 1px solid;}
+table {width:100%}
+td[estilo="impresionista"]:hover{ background: grey;}
+td[estilo="impresionista"]>img{ border: 5px solid lightgray; width:150; height:100;}
+
+.unir-title-head-foot {color: white; border: 1px solid; background-color: green;}
+.myDiv {
+  border: 2px outset green;
+  background-color: lightgray;    
+  text-align: left;
+}
+
+.table-div {display: table;}
+.row-div-table
+        {
+            display: table-row;
+        }
+.cell-div-table
+        {
+            display: table-cell;
+            border: none;
+            border-width: thin;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+		
+#h3_1 {color: purple; text-align: left;}		
+		

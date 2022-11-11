@@ -1,0 +1,70 @@
+body
+{
+	background-color: #146287;
+	font-family:verdana, sans-serif;
+	line-height: 1.6;
+	color:  #ffffff;
+}
+hr
+{
+	border: solid 0.1em white;
+	width:80%;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li::before {
+  content: "• ";  
+  color: #f9f791;
+  font-weight: bold; 
+  width: 1em; 
+  margin-left: -3em; 
+
+}
+ul
+{
+	border-left: solid 0.2em white;
+
+}
+.amarillo
+{
+	color: #f9f791;
+}
+
+.texto-centrado
+{
+	text-align: center;
+}
+
+.columna {
+  flex: 50%;
+}
+
+.columna-contenido
+{
+	width: 60%;
+}
+.contenedor
+ {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+.icono-contacto
+{
+	font-size:36px;
+	margin-right: 1.5em;
+}
+.dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #bbb;
+  display: inline-block;
+}
+.fondo-amarillo
+{
+  background-color: #f9f791;
+}
+
+
