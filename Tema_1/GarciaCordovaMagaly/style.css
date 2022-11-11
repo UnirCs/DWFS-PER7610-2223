@@ -1,0 +1,27 @@
+.title{
+    color:brown;
+    width: 50%;
+    margin-left: 450px;
+    }
+
+.titulos{
+    color: purple;
+    width: 40%;
+    margin-left: 1px;
+    border: 4px solid brown;
+}
+
+.textos{  
+color: blue;
+    width: 40%;
+    margin-left: 1px;
+    border: 4px solid brown;
+}
+
+.body{
+border: 10px solid purple;
+padding: 5px;
+width:1500px;
+height: 1500 px;
+text-align: justify;
+}
