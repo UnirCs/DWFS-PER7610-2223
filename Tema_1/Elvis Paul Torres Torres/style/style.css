@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+    grid-template-columns:  auto auto ;
+}
+.columna1{
+    background-color: 4781DF;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.columna2{
+    background-color: 4781DF;
+   
+}
+
+.linea{
+    border-top: 3px solid white;
+    height: 2px;
+    max-width: 1000px;
+    padding: 0;
+    margin: 40px auto 0 auto;
+}
+.head{
+    font-size: 70px;
+    padding: 10px;
+    background-color: 4781DF;
+    text-align: center;
+}
+
+.head h1{
+    font-size: 40px;
+}
