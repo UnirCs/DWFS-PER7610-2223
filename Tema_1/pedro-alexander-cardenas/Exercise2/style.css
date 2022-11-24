@@ -1,0 +1,16 @@
+.cont-main{
+    background-color:#FAFAFA; 
+}
+
+.circle-button {
+    border-radius: 100% !important;
+    font-size: 13px !important;
+}
+
+.subtitle-card{
+    font-size: small;
+}
+
+#promo{
+    color: green;
+}

@@ -1,0 +1,98 @@
+.main {
+    display: flex;
+}
+.left {
+  width: 50%;
+  margin-right: 100px;
+}
+.right {
+  width: 50%;
+  margin-right: 60px;
+}
+
+body{
+  margin: 50px 100px;
+  background-color: #076677;
+  font-family: "Open Sans";  
+}
+
+.separator{
+  height: 3px;  
+  background-color: white;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+h4{
+  margin: 0px;
+  padding: 0px;
+}
+
+.mgsmblock{
+  margin-top: 10px;
+}
+
+.mgmdblock{
+  margin-top: 30px;
+}
+
+.leftblockmargin{
+  margin-top: 50px;
+}
+
+.rightblockmargin{
+  margin-top: 40px;
+}
+
+.bordeizq{
+  border-left: 3px solid white ;
+  padding-left: 20px;
+}
+
+ul {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 1em;    
+  list-style: none;
+}
+
+li {
+  padding: 10px 5px;    
+}
+
+.margenli{
+  margin-left: 20px;
+}
+
+.fwhite{
+  color: white;
+}
+
+.fyellow{
+  color: rgba(255, 255, 0, 0.911);
+}
+
+.header{
+  text-align: center;
+}
+
+
+.dotyellow {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255, 255, 0, 0.911);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.width60 {
+  width: 65%;
+
+}
+
+.width40{
+  width: 30%;
+}

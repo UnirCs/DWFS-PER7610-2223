@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Form practice two</title>
+</head>
+
+<body>
+
+    <div class="container cont-main">
+        <div class="row">
+            <div class="col-9">
+
+                <h2>Billing address</h2>
+
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail" class="form-label">First name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail" class="form-label">Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail" class="form-label">Username</label>
+                            <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Email (Optional) </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="1234 Main St">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Address 2 (Optional)</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="1234 Main St">
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Country</label>
+                            <select class="form-select" id="form-select-lg example">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">State</label>
+                            <select class="form-select" multiple aria-label="multiple select example">
+                                <option selected value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Zip</label>
+                            <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                        </div>
+                    </div>
+
+                    <hr/>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">Shipping address is the sames as my
+                            billing address
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">Save this information for next time
+                        </label>
+                    </div>
+
+
+                    <hr/>
+
+
+                    <br>
+                    <h2>Payment</h2>
+
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Credit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Debit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Paypal
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Name on card</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Credit card number</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Expiration</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">CVV</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+
+
+                    <hr/>
+                    
+                    <br>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Continue to checkout</button>
+                    </div>
+                    <br>
+                </form>
+            </div>
+
+
+            <div class="col-3">
+                <h2>Your cart <button class="btn btn-secondary circle-button" type="button">3</button></h2>
+
+                <ul class="list-group">
+                    <li class="list-group-item">Product name <br>
+                        <p class="subtitle-card">Brief description</p>
+                    </li>
+                    <li class="list-group-item">Second product<br>
+                        <p class="subtitle-card">Brief description</p></li>
+                    <li class="list-group-item">Third item<br>
+                        <p class="subtitle-card">Brief description</p></li>
+                    <li class="list-group-item" id="promo">Promo code <br>
+                    <p id="promo-description">EXAMPLE CODE</p></li>
+                    <li class="list-group-item">Total (USD)</li>
+                </ul>
+
+                <br>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">Redem</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
