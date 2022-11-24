@@ -1,0 +1,101 @@
+body {
+	background: #ffefba; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffffff,
+		#ffefba
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#ffefba
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin: 0;
+}
+h1 {
+	font-family: 'Meddon', cursive;
+	color: rgba(54, 22, 13, 1);
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
+li {
+	font-family: 'Raleway', sans-serif;
+	list-style: none;
+}
+.banner-head {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.back-cv {
+	text-align: center;
+	background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.5), rgba(54, 22, 13, 0.7)),
+		url('./fondo.jpg');
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.title-head {
+	max-width: 100%;
+	text-align: center;
+	color: #ffffff !important;
+	padding: 5vh;
+}
+.title-head > h1 {
+	font-family: 'Meddon', cursive;
+	font-size: 4em;
+	align-items: center;
+	background-color: transparent;
+	justify-content: center;
+	margin: 0;
+	color: #ffffff !important;
+}
+.title-head > h2 {
+	background-color: transparent;
+	margin: 0;
+}
+.body-cv {
+	padding: 3vw;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+}
+.left-column {
+	padding-left: 10%;
+	width: 50%;
+	flex-direction: column;
+	display: flex;
+	align-content: space-between;
+}
+.right-column {
+	padding-left: 10%;
+	width: 50%;
+	flex-direction: column;
+	display: flex;
+	align-content: space-between;
+}
+.icon-item {
+	display: flex;
+	align-items: center;
+}
+.icon-item > img {
+	padding-right: 1%;
+}
+.credits {
+	padding: 5vh;
+	height: 5vh;
+	font-size: 3vh;
+}
+a{
+	color: #ffffff;
+}
+ a:hover{
+	color: #f3c0c0;
+	text-decoration: none;
+}
+#profile {
+	width: 80%;
+}
