@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Checkout </title>
+		<!-- Place your kit's code here -->
+		<link rel="stylesheet" href="style.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+	</head>
+	<body>
+		<h1> Checkout Example</h1> <br>
+		<div class="container">
+			<div class="row">
+				<div class="col-8 col-lg-8 col-sm-12">
+					<h2> Billing Address </h2>
+					<form>
+						<div class="row">
+							<div class="col">
+								<label for="name">Name:</label>
+								<input type="text" class="form-control" placeholder="Name"/>
+							</div>
+							<div class="col">
+								<label for="lastname">Last Name:</label>
+								<input type="text" class="form-control" placeholder="Last name"/>
+							</div>
+						</div>
+                        <br/>
+                        <div class="col-sm-12 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                            </div>
+                          </div>
+                          <br/>
+                        
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="pwd" placeholder=" email "/>
+						</div>
+                        <br/>
+						<div class="form-group">
+							<label for="addre">Adrress:</label>
+							<input type="text" class="form-control" id="addre" placeholder="Quito Conocoto"/>
+						</div>
+                        <br/>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="inputCountry">Country</label>
+								<select id="inputCountry" class="form-control">
+									<option>Argentina</option>
+									<option selected>Ecuador< option>
+									<option>Espania</option>
+								</select>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">State</label>
+								<select id="inputState" class="form-control">
+									<option selected>1< option>
+									<option>1</option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<label for="inputZip">Zip</label>
+								<input type="text" class="form-control" id="inputZip"/>
+							</div>
+						</div> <br>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Shipping addres is the same as my billing address
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                            <label class="form-check-label" for="defaultCheck2">
+                              Save this information for next time
+                            </label>
+                          </div>
+                          <hr>
+						<div class="form-group">
+							<h2> Payment </h2>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="creditcard" id="exampleRadios1" value="option1" checked/>
+								<label class="form-check-label" for="exampleRadios1"> Credit card </label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="debitcard" id="exampleRadios2" value="option2"/>
+								<label class="form-check-label" for="exampleRadios2">   Debit Card </label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="paypal" id="exampleRadios3" value="option3"/>
+								<label class="form-check-label" for="exampleRadios3"> PayPal </label>
+							</div>
+                            <br>
+							<div class="row">
+								<div class="col">
+									<label for="name">Name Card:</label>
+									<input type="text" class="form-control"/>
+								</div>
+								<div class="col">
+									<label for="number">Number card:</label>
+									<input type="text" class="form-control"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="expiration">Expiration:</label>
+									<input type="text" class="form-control"/>
+								</div>
+								<div class="col">
+									<label for="cvv">CVV:</label>
+									<input type="text" class="form-control"/>
+								</div>
+							</div>
+						</div>
+                        </br>
+                        <hr>
+					
+				</div>
+				<div class="col-4 col-sm-12 col-lg-4">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <h2> You cart </h2>
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <div class="col-md-2 circulo">
+                            <p class="txtBlanco">3</p>
+                        </div>
+                    </div>
+                </div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">First Producto</h5>
+								<small> $50 </small>
+							</div>
+							<p class="mb-1">Description First Product.</p>
+						</li>
+						<li class="list-group-item">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">Second Product </h5>
+								<small class="text-muted">$90</small>
+							</div>
+							<p class="mb-1">Description Second Product.</p>
+						</li>
+						<li class="list-group-item">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">Third Product</h5>
+								<small class="text-muted">$60</small>
+							</div>
+							<p class="mb-1">Description third Product.</p>
+						</li>
+                        <li class="list-group-item">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1 txt-green">Promo Code</h5>
+								<small class="txt-green">-$20</small>
+							</div>
+							<p class="mb-1 txt-green">Description Promo.</p>
+						</li>
+						<li class="list-group-item">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">TOTAL USD</h5>
+								<small class="text-muted">$180</small>
+							</div>
+						</li>
+					</ul>
+                    <br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Promo Code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button">Redeem</button>
+                        </div>
+                      </div>
+				</div>
+			</div>
+		</div>
+       
+        <div class="row col-8  ">
+            <button type="submit" class="btn btn-primary">Continuo to checkout</button>
+        </div>
+    </form>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"/>
+	</body>
+</html>

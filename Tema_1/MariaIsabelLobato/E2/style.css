@@ -1,0 +1,28 @@
+body {
+	
+	font-family: Arial;
+	padding: 40px;
+	margin-left: 60px;
+	margin-right: 60px;
+	background-color: #f8f9fa !important;
+}
+
+h1 {
+	
+	text-align: center;
+}
+.circulo {
+	width: 10px;
+	height: 28px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #696b69;
+}
+.txtBlanco{
+	color: #f8f9fa;
+	text-align: center;
+}
+.txt-green{
+	color:rgb(31, 194, 118);
+}
