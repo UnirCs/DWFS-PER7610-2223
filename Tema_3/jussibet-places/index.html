@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caja de chistes de chucknorris</title>
+    <script lang="javascript">
+            function presentar() {
+                document.getElementById("resultados").innerHTML='';
+                fetch('https://api.chucknorris.io/jokes/random')
+                    .then(response => response.json())
+                    .then(json => {
+                        document.getElementById("resultados").innerHTML=json.value;
+                    })
+                    .catch(err => console.log('Solicitud fallida', err));
+            }
+    </script>
+</head>
+<body>
+    <br><br><br>
+    <button onclick="presentar()">Dame un chiste </button>
+    <br><br><br>
+    <p id="resultados">PREPÁRATE PARA EL CHISTE</p>
+</body>
+</html>
