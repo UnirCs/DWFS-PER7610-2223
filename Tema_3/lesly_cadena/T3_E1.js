@@ -46,11 +46,7 @@ console.log(obtenerLetraDni(50487965, letras))
 numero = 20;
 const esPar = (numero)=> {
 
-    if (numero % 2 === 0){
-        return true;
-    }else{
-        return false;
-    }
+    return numero % 2 === 0
 
 } 
 
@@ -115,11 +111,7 @@ const esPalindromo = (cadena) =>{
     array_reverse = array.reverse();
     cadena_reverse = array_reverse.join('');
 
-    if (cadena == cadena_reverse){
-        return true;
-    }else{
-        return false;
-    }
+    return cadena == cadena_reverse
 } 
 
 
