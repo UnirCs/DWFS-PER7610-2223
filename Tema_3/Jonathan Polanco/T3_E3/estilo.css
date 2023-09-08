@@ -1,0 +1,21 @@
+#btnAceptar{
+    justify-content: left;
+    font-weight: bold;
+    width:150px;
+    height:40px;
+
+}
+
+label{color:rgb(216, 187, 17);
+  justify-content: center;
+  font-family: arial;
+  font-size: 18px;
+}
+
+#divPadre{
+    height:100%;
+    width:100%;
+    background-color:rgb(25, 24, 100);
+    padding: 20px;
+}
+
