@@ -1,0 +1,187 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: bahnschrift, sans-serif;
+}
+
+body.oscuro {
+    background: #3a637f !important;
+}
+
+body.claro {
+    background: #F2F9FA !important;
+}
+
+h1, h2, h3 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.claro h1, .claro h2, .claro h3 {
+    color: #3a637f;
+}
+
+.oscuro h1, .oscuro h2, .oscuro h3 {
+    color: #edef62;
+}
+
+.cabecera {
+    text-align: center;
+    padding: 20px 20px 5px;
+}
+
+.cabecera h1 {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.cabecera h3 {
+    font-weight: lighter;
+    margin: 0;
+}
+
+hr {
+    border: 2.5px solid #dff6f6;
+    margin: 2rem;
+}
+
+.cuerpo {
+    padding: 0 3.2rem;
+    display: flex;
+}
+
+.seccion:first-child {
+    padding-right: 6rem;
+    width: 45%;
+}
+
+.seccion:first-child .info {
+    margin-bottom: 5rem;
+}
+
+.seccion:last-child {
+    padding-right: 6rem;
+    width: 55%;
+}
+
+.seccion, .info, .tablaskill {
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.oscuro .seccion, .oscuro .info, .oscuro .tablaskill {
+    color: #dff6f6;
+}
+
+.claro .seccion, .claro .info, .claro .tablaskill {
+    color: #3a637f;
+}
+
+.contact, .experiencia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact li {
+    margin: 18px 0;
+}
+
+.contact .fa {
+    font-size: 25px;
+    width: 25px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.oscuro .contact .fa {
+    color: #edef62;
+}
+
+.claro .contact .fa {
+    color: #3a637f;
+}
+
+.tablaskill {
+    width: 100%;
+}
+
+.tablaskill tr td {
+    padding: 6px 0;
+}
+
+.tablaskill tr td:first-child {
+    width: 60%;
+}
+
+.punto {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+
+.oscuro .activo {
+    background: #f2f865;
+}
+
+.oscuro .inactivo {
+    background: #3b6982;
+}
+
+.claro .activo {
+    background: #3b6982;
+}
+
+.claro .inactivo {
+    background: #e2dba5;
+}
+
+.experiencia li {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    padding-bottom: 2.5em;
+}
+
+.experiencia li:after {
+    content: '\00b7';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: transparent;
+}
+
+.experiencia li:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    height: 100%;
+    width: 1px;
+}
+.estilo {
+    color: black;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+.oscuro .experiencia li:after {
+    background: #f2f865;
+}
+
+.oscuro .experiencia li:before {
+    border-left: 2px solid #f2f865;
+}
+
+.claro .experiencia li:after {
+    background: #3b6982;
+}
+
+.claro .experiencia li:before {
+    border-left: 2px solid #3b6982;
+}
+
